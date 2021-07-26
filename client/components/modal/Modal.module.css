@@ -1,0 +1,94 @@
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  height: 100%;
+  display: flex;
+  scroll-behavior: unset;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.borad {
+  background: white;
+  width: 500px;
+  height: auto;
+  min-height: 180px;
+  border-radius: 8px;
+  animation: moveUp 0.5s ease-in-out;
+}
+.header {
+  border-bottom: 1px solid rgb(238, 238, 238);
+  height: 3rem;
+  padding: 0rem 1rem;
+  display: flex;
+
+  align-items: center;
+}
+.heading {
+  width: 100%;
+  text-align: center;
+}
+.form,
+.form2 {
+  padding: 1rem;
+}
+.form input {
+  width: 100%;
+  border: 1px solid rgb(219, 219, 219);
+  outline: none;
+  padding: 0.3rem;
+}
+
+.modalBtn {
+  background-color: teal;
+  height: 2rem;
+  max-width: 10rem;
+  margin: auto;
+  margin-top: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.firstsec,
+.secondsec {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.firstsec input,
+.secondsec > input {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  margin-bottom: 0 !important;
+  padding-left: 0.5rem;
+}
+.firstsec input::placeholder,
+.secondsec > input::placeholder {
+  color: rgb(189, 189, 189);
+}
+.firstsec input:hover,
+.secondsec > input:hover {
+  border: 1px solid#40a9ff;
+}
+.firstsec input:focus,
+.secondsec > input:focus {
+  border: 1px solid#40a9ff;
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(100vh);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}

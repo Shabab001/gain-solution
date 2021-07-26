@@ -1,0 +1,17 @@
+.main {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+}
+.tableContainer {
+  padding: 0rem 1rem;
+}
+.heading > p:nth-child(1) {
+  font-size: 2rem;
+}
+.upper {
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
